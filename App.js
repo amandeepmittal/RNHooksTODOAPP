@@ -7,6 +7,8 @@ import {
 	TextInput
 } from 'react-native';
 
+import Icon from 'react-native-vector-icons/Feather';
+
 export default function App() {
 	return (
 		<View style={styles.container}>
@@ -18,6 +20,9 @@ export default function App() {
 					placeholder="What do you want to do today?"
 					placeholderTextColor="#abbabb"
 				/>
+				<TouchableOpacity>
+					<Icon name="plus" size={30} color="blue" style={{ marginLeft: 15 }} />
+				</TouchableOpacity>
 			</View>
 		</View>
 	);
